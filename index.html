@@ -35,11 +35,14 @@ main{padding:36px 0 40px}
 .step.active{display:block}
 .no-js .step{display:block;margin-bottom:56px}
 .kicker{margin:0 0 8px;font-size:14px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--red-dark)}
-h1.display{font-size:clamp(44px,9vw,84px);margin:0 0 18px}
+h1.display{font-size:clamp(44px,7.5vw,72px);margin:0 0 18px}
+.hero{display:grid;grid-template-columns:1fr 230px;gap:24px;align-items:center}
+.hero img{width:100%;height:auto;display:block}
+@media (max-width:640px){.hero{grid-template-columns:1fr}.hero img{max-width:190px;justify-self:center;order:-1}}
 h2.display{font-size:clamp(36px,7vw,58px);margin:0 0 16px}
 h3{font-size:21px;margin:0 0 6px}
 .lead{font-size:20px;max-width:640px}
-.hl{background:var(--ink);color:#fff;padding:0 10px}
+.hl{display:inline-block;margin-top:10px;background:var(--ink);color:#fff;padding:4px 12px 2px}
 
 .card{background:var(--white);border:2px solid var(--line);border-radius:16px;padding:22px 24px;margin:18px 0}
 .card.red{background:var(--red);border-color:var(--red);color:#fff}
@@ -112,9 +115,14 @@ footer.bottom p{margin:0}
 
 <!-- WELCOME -->
 <section class="step" id="welcome" data-short="Start" aria-labelledby="t-welcome">
+<div class="hero">
+<div>
 <p class="kicker">October 26–30, 2026</p>
 <h1 class="display" id="t-welcome">Make a Difference.<br>Be a Hero.<br><span class="hl">Stay Drug Free.</span></h1>
 <p class="lead">This is your guide to Red Ribbon Week. Each day in homeroom you'll spend about 15 minutes watching, talking, and writing. Walk through each day here to see what's coming.</p>
+</div>
+<img src="lion.png" alt="Lion wearing a red ribbon" width="460" height="640" onerror="this.remove()">
+</div>
 
 <div class="rhythm" aria-label="Every day's routine">
 <div><b>Watch</b><span>5 min</span></div>

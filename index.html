@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Ribbon Week 2026 · Cardozo Middle School</title>
+<meta name="description" content="Walk through Red Ribbon Week at Cardozo Middle School: Make a Difference. Be a Hero. Stay Drug Free. October 26–30, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap">
+<style>
+:root{--red:#C8102E;--red-dark:#9E0C24;--ink:#14213D;--cream:#FFF8F0;--white:#FFFFFF;--muted:#4A5568;--line:#14213D}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:18px;line-height:1.55}
+a{color:var(--red-dark);font-weight:600}
+a:hover{color:var(--ink)}
+.display{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.5px;line-height:1}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;border-radius:8px;z-index:10}
+.skip:focus{left:8px}
+
+header.top{background:var(--red);color:#fff}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+.brand svg{flex:none}
+.progress{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.progress button{font:inherit;font-size:13px;font-weight:800;min-width:44px;min-height:44px;padding:0 10px;border-radius:999px;border:2px solid #fff;background:transparent;color:#fff;cursor:pointer}
+.progress button[aria-current="step"]{background:#fff;color:var(--red-dark)}
+.progress button.done{background:rgba(255,255,255,.22)}
+.progress button:focus-visible,.btn:focus-visible,.choice:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+main{padding:36px 0 40px}
+.step{display:none}
+.step.active{display:block}
+.no-js .step{display:block;margin-bottom:56px}
+.kicker{margin:0 0 8px;font-size:14px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--red-dark)}
+h1.display{font-size:clamp(44px,9vw,84px);margin:0 0 18px}
+h2.display{font-size:clamp(36px,7vw,58px);margin:0 0 16px}
+h3{font-size:21px;margin:0 0 6px}
+.lead{font-size:20px;max-width:640px}
+.hl{background:var(--ink);color:#fff;padding:0 10px}
+
+.card{background:var(--white);border:2px solid var(--line);border-radius:16px;padding:22px 24px;margin:18px 0}
+.card.red{background:var(--red);border-color:var(--red);color:#fff}
+.card.red a{color:#fff}
+.card.ink{background:var(--ink);border-color:var(--ink);color:#fff}
+.card.ink a{color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.grid .card{margin:0}
+.label{display:inline-block;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}
+ul.clean{margin:8px 0 0;padding-left:22px}
+ul.clean li{margin:6px 0}
+.rhythm{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.rhythm div{background:var(--white);border:2px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.rhythm b{display:block;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:24px;text-transform:uppercase}
+.rhythm span{font-size:14px;color:var(--muted)}
+@media (max-width:560px){.rhythm{grid-template-columns:repeat(2,1fr)}}
+
+.daylist{list-style:none;margin:16px 0;padding:0;display:grid;gap:10px}
+.daylist li{display:flex;gap:16px;align-items:center;background:var(--white);border:2px solid var(--line);border-radius:12px;padding:12px 16px}
+.daylist .d{flex:none;width:66px;text-align:center;background:var(--ink);color:#fff;border-radius:10px;padding:6px 0}
+.daylist .d b{display:block;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:22px}
+.daylist .d small{font-size:13px;font-weight:600}
+
+.video{display:flex;gap:18px;align-items:center}
+.video svg{flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;border:2px solid var(--ink);background:var(--ink);color:#fff;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--red);border-color:var(--red);color:#fff}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.white{background:#fff;color:var(--red-dark);border-color:#fff}
+.btn.white:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+.lines{display:grid;gap:10px;margin-top:12px}
+.choice{text-align:left;font:inherit;background:var(--cream);border:2px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer;color:var(--ink);min-height:44px}
+.choice[aria-pressed="true"]{background:var(--ink);color:#fff}
+.picked{margin-top:14px;font-size:20px;font-weight:800;min-height:1.5em}
+
+.field{display:flex;flex-direction:column;gap:6px;margin:14px 0}
+.field label{font-weight:800}
+.field input{font:inherit;padding:12px 14px;border:2px solid var(--line);border-radius:10px;min-height:48px;background:#fff;color:var(--ink)}
+.check{display:flex;gap:12px;align-items:flex-start;margin:14px 0}
+.check input{width:24px;height:24px;margin-top:3px;accent-color:var(--red)}
+.pledge-text{font-size:20px;font-weight:600}
+.pledged{display:none;text-align:center}
+.pledged.show{display:block}
+
+nav.pager{display:flex;justify-content:space-between;gap:12px;margin-top:30px;border-top:2px solid var(--line);padding-top:22px}
+footer.bottom{background:var(--ink);color:#fff;padding:28px 0;font-size:16px}
+footer.bottom .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer.bottom p{margin:0}
+.ribbon-path{fill:none;stroke-width:15;stroke-linejoin:round}
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="top">
+<div class="wrap">
+<div class="brand">
+<svg width="26" height="32" viewBox="0 0 100 120" aria-hidden="true"><path class="ribbon-path" stroke="#fff" d="M28 112 L58 46 C70 22 61 8 50 8 C39 8 30 22 42 46 L72 112"/></svg>
+<span>Cardozo Middle School<br>Red Ribbon Week</span>
+</div>
+<nav class="progress" aria-label="Steps" id="progress"></nav>
+</div>
+</header>
+
+<main id="content">
+<div class="wrap">
+
+<!-- WELCOME -->
+<section class="step" id="welcome" data-short="Start" aria-labelledby="t-welcome">
+<p class="kicker">October 26–30, 2026</p>
+<h1 class="display" id="t-welcome">Make a Difference.<br>Be a Hero.<br><span class="hl">Stay Drug Free.</span></h1>
+<p class="lead">This is your guide to Red Ribbon Week. Each day in homeroom you'll spend about 15 minutes watching, talking, and writing. Walk through each day here to see what's coming.</p>
+
+<div class="rhythm" aria-label="Every day's routine">
+<div><b>Watch</b><span>5 min</span></div>
+<div><b>Talk</b><span>5 min</span></div>
+<div><b>Write</b><span>4 min</span></div>
+<div><b>Close</b><span>1 min</span></div>
+</div>
+
+<div class="card red">
+<span class="label">No dress-up days</span>
+<p style="margin:0">Wear your regular uniform all week. Your <b>red ribbon</b> is how you show you're in. Pin it to your shirt, tie it to your backpack, or wear it as a bracelet.</p>
+</div>
+
+<h3>The week at a glance</h3>
+<ul class="daylist">
+<li><span class="d"><b>Mon</b><small>10/26</small></span><span><b>Making a Difference</b>: get your ribbon and sign the pledge</span></li>
+<li><span class="d"><b>Tue</b><small>10/27</small></span><span><b>Your Story Isn't Finished</b>: bouncing back</span></li>
+<li><span class="d"><b>Wed</b><small>10/28</small></span><span><b>Discover Your Natural High</b>: pledges due</span></li>
+<li><span class="d"><b>Thu</b><small>10/29</small></span><span><b>Every Hero Starts With One Choice</b>: essays due</span></li>
+<li><span class="d"><b>Fri</b><small>10/30</small></span><span><b>Reflection &amp; Celebration</b>: winners announced</span></li>
+</ul>
+</section>
+
+<!-- MONDAY -->
+<section class="step" id="monday" data-short="Mon" aria-labelledby="t-mon">
+<p class="kicker">Monday, Oct. 26 · Day 1</p>
+<h2 class="display" id="t-mon">Making a Difference</h2>
+<p class="lead">Heroes aren't just famous people. Today is about the difference one person's choices make, starting with yours.</p>
+
+<div class="card video">
+<svg width="52" height="52" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z" fill="#C8102E"/></svg>
+<div><span class="label">Watch</span><h3>Carissa Moore</h3><p style="margin:0">Pro surfer and Olympian, on the influence we have on others.</p><p style="margin:10px 0 0"><a href="https://www.naturalhigh.org/playlists/red-ribbon-week-2026/" target="_blank" rel="noopener">Watch on Natural High ↗</a></p></div>
+</div>
+
+<div class="grid">
+<div class="card"><span class="label">Talk with a partner</span><ul class="clean"><li>Who influences your choices most right now?</li><li>Is that influence helping you or pulling you off track?</li><li>How might you influence younger students, siblings, or friends without realizing it?</li></ul></div>
+<div class="card"><span class="label">Quick write · 3–4 min</span><p style="margin:0">Who influences your choices, for better or worse? Name <b>one influence you want to keep</b> and <b>one you want to limit</b>.</p></div>
+</div>
+
+<div class="card ink"><span class="label">Today</span><p style="margin:0">Get your red ribbon and sign the pledge in homeroom. Want to read it first? It's at the <a href="#pledge" data-go="pledge">end of this guide</a>.</p></div>
+</section>
+
+<!-- TUESDAY -->
+<section class="step" id="tuesday" data-short="Tue" aria-labelledby="t-tue">
+<p class="kicker">Tuesday, Oct. 27 · Day 2</p>
+<h2 class="display" id="t-tue">Your Story Isn't Finished</h2>
+<p class="lead">A hard chapter doesn't define your whole story. Today is about bouncing back.</p>
+
+<div class="card video">
+<svg width="52" height="52" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z" fill="#C8102E"/></svg>
+<div><span class="label">Watch</span><h3>Jawaan</h3><p style="margin:0">Pro drummer, on resilience and not giving up.</p><p style="margin:10px 0 0"><a href="https://www.naturalhigh.org/playlists/red-ribbon-week-2026/" target="_blank" rel="noopener">Watch on Natural High ↗</a></p></div>
+</div>
+
+<div class="grid">
+<div class="card"><span class="label">Talk about it</span><ul class="clean"><li>What does "bouncing back" look like in middle school: a bad grade, a lost game, a friendship problem?</li><li>Who or what helps people recover instead of giving up?</li></ul></div>
+<div class="card"><span class="label">Quick write · 3–4 min</span><p style="margin:0">Write about a time you bounced back. What happened, what helped, and what would you tell someone going through the same thing now?</p><p style="margin:10px 0 0;color:var(--muted);font-size:16px">It can be something small. Small comebacks still count.</p></div>
+</div>
+
+<div class="card ink"><span class="label">Reminder</span><p style="margin:0">Turn in your signed pledge by <b>tomorrow</b>, and start thinking about your <a href="#essay" data-go="essay">essay</a>. It's due Thursday.</p></div>
+</section>
+
+<!-- WEDNESDAY -->
+<section class="step" id="wednesday" data-short="Wed" aria-labelledby="t-wed">
+<p class="kicker">Wednesday, Oct. 28 · Day 3</p>
+<h2 class="display" id="t-wed">Discover Your Natural High</h2>
+<p class="lead">A <b>natural high</b> is something that gives you energy, joy, or calm without drugs or alcohol.</p>
+
+<div class="card video">
+<svg width="52" height="52" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z" fill="#C8102E"/></svg>
+<div><span class="label">Watch</span><h3>Lisa Leslie</h3><p style="margin:0">WNBA player and Olympian, on finding what you love and protecting it.</p><p style="margin:10px 0 0"><a href="https://www.naturalhigh.org/playlists/red-ribbon-week-2026/" target="_blank" rel="noopener">Watch on Natural High ↗</a></p></div>
+</div>
+
+<div class="card">
+<span class="label">Natural high ideas</span>
+<p style="margin:0">Sports · music · art · gaming with friends · faith · family time · being outdoors · helping others · dance · reading · cooking · building things</p>
+</div>
+
+<div class="grid">
+<div class="card"><span class="label">Talk about it</span><p style="margin:0">How is a natural high different from a short artificial high that leaves you worse off afterward?</p></div>
+<div class="card"><span class="label">Quick write · 3–4 min</span><p style="margin:0">Name your natural high and why it matters to you.</p><p style="margin:10px 0 0;color:var(--muted);font-size:16px">This paragraph can be the start of your competition essay!</p></div>
+</div>
+
+<div class="card ink"><span class="label">Due today</span><p style="margin:0">Signed pledges. Homerooms are competing for the most pledges turned in!</p></div>
+</section>
+
+<!-- THURSDAY -->
+<section class="step" id="thursday" data-short="Thu" aria-labelledby="t-thu">
+<p class="kicker">Thursday, Oct. 29 · Day 4</p>
+<h2 class="display" id="t-thu">Every Hero Starts With One Choice</h2>
+<p class="lead">Knowing what you want to say is easier than saying it in the moment. Today you'll practice the words.</p>
+
+<div class="card video">
+<svg width="52" height="52" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z" fill="#C8102E"/></svg>
+<div><span class="label">Watch</span><h3>Brian Head Welch</h3><p style="margin:0">On belief, choices, and changing direction.</p><p style="margin:10px 0 0"><a href="https://www.naturalhigh.org/playlists/red-ribbon-week-2026/" target="_blank" rel="noopener">Watch on Natural High ↗</a></p></div>
+</div>
+
+<div class="card">
+<span class="label">Pick your line</span>
+<p style="margin:0">Tap the line that sounds most like you. Then practice it out loud with a partner and make it your own.</p>
+<div class="lines" role="group" aria-label="Refusal lines">
+<button class="choice" type="button" aria-pressed="false">"No thanks, I'm good. I'm not risking my season or my grades for that."</button>
+<button class="choice" type="button" aria-pressed="false">"That's not my thing. I'm heading over here instead. Come with me."</button>
+<button class="choice" type="button" aria-pressed="false">"I can't. My people would find out, and it's not worth it."</button>
+<button class="choice" type="button" aria-pressed="false">The broken record: calmly repeat "No, I'm good," then change the subject or walk away.</button>
+</div>
+<p class="picked" id="picked" aria-live="polite"></p>
+</div>
+
+<div class="grid">
+<div class="card"><span class="label">Talk about it</span><ul class="clean"><li>Why is it hard to say no in the moment?</li><li>What makes it easier: a friend backing you up, a reason ready, a way to leave?</li></ul></div>
+<div class="card"><span class="label">Quick write · 3–4 min</span><p style="margin:0">Write the exact words you'd say if someone offered you a vape, a pill, or a drink. Use your own voice.</p></div>
+</div>
+
+<div class="card red"><span class="label">Due today</span><p style="margin:0">Competition essays go to your homeroom or ELA teacher by the end of the day. <a href="#essay" data-go="essay">See the essay details</a>.</p></div>
+</section>
+
+<!-- FRIDAY -->
+<section class="step" id="friday" data-short="Fri" aria-labelledby="t-fri">
+<p class="kicker">Friday, Oct. 30 · Day 5</p>
+<h2 class="display" id="t-fri">Reflection &amp; Celebration</h2>
+<p class="lead">You made a pledge, you named your natural high, and you practiced the words. Today we celebrate.</p>
+
+<div class="card">
+<span class="label">Sticky note reflection</span>
+<p style="margin:0 0 8px">Finish one of these on a sticky note and add it to the hallway wall:</p>
+<ul class="clean"><li><b>My natural high is</b> ______</li><li><b>One hero choice I will make is</b> ______</li></ul>
+</div>
+
+<div class="grid">
+<div class="card"><span class="label">Listen for</span><p style="margin:0">Essay winners from 6th, 7th, and 8th grade, plus the homeroom with the most pledges, on the morning announcements.</p></div>
+<div class="card"><span class="label">Go see</span><p style="margin:0">The pledge wall, the sticky notes, and the winning essays in the hallway.</p></div>
+</div>
+
+<div class="card ink"><p class="display" style="margin:0;font-size:30px;line-height:1.15">You don't need to be famous to be a hero.</p><p style="margin:10px 0 0">Keep your ribbon as a reminder.</p></div>
+</section>
+
+<!-- ESSAY -->
+<section class="step" id="essay" data-short="Essay" aria-labelledby="t-essay">
+<p class="kicker">Writing competition · Due Thursday, Oct. 29</p>
+<h2 class="display" id="t-essay">My Natural High / Everyday Hero</h2>
+<p class="lead">Write <b>200–300 words</b> answering: <i>What gives you a natural high, and who is an everyday hero in your life who helps you make healthy choices?</i></p>
+
+<div class="grid">
+<div class="card"><span class="label">1 · Your natural high</span><p style="margin:0">Name it. Give a specific example of how it makes you feel and why it matters.</p></div>
+<div class="card"><span class="label">2 · Your everyday hero</span><p style="margin:0">A real person (family, coach, teacher, friend, or mentor) and one specific thing they did or said.</p></div>
+<div class="card"><span class="label">3 · Your hero choice</span><p style="margin:0">End with one choice you'll make to stay drug free and make a difference for someone else.</p></div>
+</div>
+
+<div class="card">
+<span class="label">Need a start?</span>
+<p style="margin:0">"My natural high is ___ because when I ___, I feel ___. My everyday hero is ___ because they ___."</p>
+</div>
+
+<div class="card">
+<span class="label">Use any class</span>
+<ul class="clean">
+<li><b>ELA:</b> a strong opening, personal details, and editing.</li>
+<li><b>Science / Health:</b> add a short paragraph on how a natural high affects your brain and body differently from drugs or vaping.</li>
+<li><b>Social Studies:</b> interview your hero with 3 questions, quote one answer, and connect their story to your community.</li>
+</ul>
+</div>
+
+<div class="grid">
+<div class="card"><span class="label">How to turn it in</span><p style="margin:0">Name, grade, and homeroom teacher at the top. Typed or neatly handwritten. Give it to your homeroom or ELA teacher by the end of the day Thursday.</p></div>
+<div class="card red"><span class="label">Prizes</span><p style="margin:0">One winner per grade gets a certificate, a hallway display, and a shout-out on the morning announcements. Every complete entry counts for your homeroom!</p></div>
+</div>
+
+<div class="card">
+<span class="label">How essays are judged (out of 12)</span>
+<ul class="clean">
+<li><b>Clear message:</b> your natural high and drug-free choice are clear from start to finish.</li>
+<li><b>Personal example:</b> specific, vivid examples for both your natural high and your hero.</li>
+<li><b>Hero choice:</b> a concrete, believable choice you'll actually make.</li>
+<li><b>Length &amp; clarity:</b> 200–300 words, easy to read, few errors.</li>
+</ul>
+</div>
+</section>
+
+<!-- PLEDGE -->
+<section class="step" id="pledge" data-short="Pledge" aria-labelledby="t-pledge">
+<p class="kicker">Make it yours</p>
+<h2 class="display" id="t-pledge">My Red Ribbon Week Pledge</h2>
+
+<div class="card" id="pledge-form">
+<p class="pledge-text">I pledge to make choices that keep my mind and body healthy. I will discover and protect my natural high, support friends who make healthy choices, and use my words and actions to make a difference for others. I understand that being a hero starts with one choice, and I can make that choice today.</p>
+<div class="field">
+<label for="nh">My natural high is…</label>
+<input id="nh" type="text" maxlength="60" autocomplete="off" placeholder="for example: playing basketball">
+</div>
+<div class="check">
+<input id="agree" type="checkbox">
+<label for="agree">I'm making this pledge.</label>
+</div>
+<button class="btn" id="take" type="button" disabled>Take the pledge</button>
+<p style="margin:14px 0 0;color:var(--muted);font-size:15px">Nothing you type here is saved or sent anywhere. Remember to sign the paper pledge in homeroom too. That's the one that counts for your homeroom!</p>
+</div>
+
+<div class="card red pledged" id="pledged" tabindex="-1">
+<svg width="70" height="84" viewBox="0 0 100 120" aria-hidden="true"><path class="ribbon-path" stroke="#fff" d="M28 112 L58 46 C70 22 61 8 50 8 C39 8 30 22 42 46 L72 112"/></svg>
+<p class="display" style="font-size:44px;margin:10px 0">You took the pledge!</p>
+<p style="margin:0;font-size:20px" id="nh-out"></p>
+<p style="margin:14px 0 0;font-weight:800">Make a Difference. Be a Hero. Stay Drug Free.</p>
+</div>
+
+<div class="card ink">
+<span class="label">Need to talk?</span>
+<p style="margin:0">If you or a friend is dealing with pressure to use drugs, vaping, or alcohol, talk to a trusted adult. Your school counselor is here for you.</p>
+</div>
+</section>
+
+<nav class="pager" aria-label="Previous and next" id="pager">
+<button class="btn ghost" id="prev" type="button">← Back</button>
+<button class="btn" id="next" type="button">Next →</button>
+</nav>
+</div>
+</main>
+
+<footer class="bottom">
+<div class="wrap">
+<p>Cardozo Middle School · Red Ribbon Week · Oct. 26–30, 2026</p>
+<p>Videos from <a href="https://www.naturalhigh.org/playlists/red-ribbon-week-2026/" style="color:#fff">Natural High</a></p>
+</div>
+</footer>
+
+<script>
+(function(){
+document.body.classList.remove('no-js');
+var steps=[].slice.call(document.querySelectorAll('.step'));
+var ids=steps.map(function(s){return s.id});
+var prog=document.getElementById('progress');
+var prev=document.getElementById('prev'),next=document.getElementById('next');
+var cur=0;
+steps.forEach(function(s,i){
+var b=document.createElement('button');
+b.type='button';b.textContent=s.dataset.short;
+b.setAttribute('aria-label','Go to '+s.querySelector('h1,h2').textContent);
+b.addEventListener('click',function(){go(i,true)});
+prog.appendChild(b);
+});
+var dots=[].slice.call(prog.children);
+function go(i,focus){
+cur=Math.max(0,Math.min(steps.length-1,i));
+steps.forEach(function(s,j){s.classList.toggle('active',j===cur)});
+dots.forEach(function(d,j){
+if(j===cur)d.setAttribute('aria-current','step');else d.removeAttribute('aria-current');
+d.classList.toggle('done',j<cur);
+});
+prev.disabled=cur===0;
+next.textContent=cur===steps.length-1?'Start over ↺':'Next →';
+if(location.hash.slice(1)!==ids[cur])history.replaceState(null,'','#'+ids[cur]);
+window.scrollTo(0,0);
+if(focus){var h=steps[cur].querySelector('h1,h2');h.setAttribute('tabindex','-1');h.focus({preventScroll:true});}
+}
+prev.addEventListener('click',function(){go(cur-1,true)});
+next.addEventListener('click',function(){go(cur===steps.length-1?0:cur+1,true)});
+document.querySelectorAll('[data-go]').forEach(function(a){
+a.addEventListener('click',function(e){e.preventDefault();go(ids.indexOf(a.dataset.go),true)});
+});
+window.addEventListener('hashchange',function(){var i=ids.indexOf(location.hash.slice(1));if(i>=0&&i!==cur)go(i,true)});
+var start=ids.indexOf(location.hash.slice(1));
+go(start>=0?start:0,false);
+
+var choices=[].slice.call(document.querySelectorAll('.choice'));
+var picked=document.getElementById('picked');
+choices.forEach(function(c){
+c.addEventListener('click',function(){
+choices.forEach(function(o){o.setAttribute('aria-pressed',o===c?'true':'false')});
+picked.textContent='Your line is ready. Now say it out loud!';
+});
+});
+
+var agree=document.getElementById('agree'),take=document.getElementById('take'),nh=document.getElementById('nh');
+agree.addEventListener('change',function(){take.disabled=!agree.checked});
+take.addEventListener('click',function(){
+var v=nh.value.trim();
+document.getElementById('nh-out').textContent=v?'My natural high is '+v+'.':'Being a hero starts with one choice.';
+document.getElementById('pledge-form').style.display='none';
+var p=document.getElementById('pledged');p.classList.add('show');p.focus();
+});
+})();
+</script>
+</body>
+</html>
